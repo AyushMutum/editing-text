@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+
+  }
+
+  #editor-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  h1{
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+
+  #editor {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  label{
+    font-size: 1em;
+  }
+  #fontSelect {
+    margin-right: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  #fontSelect:hover{
+    background-color: #edecec;
+  }
+
+
+  button{
+    padding: 5px 20px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  button:hover{
+    background-color: #edecec;
+  }
+ 
+  #modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+
+  #modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-size:1.1em;
+    
+  }
+
+  #modal-content > input {
+    width: 200px;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  #modal-content > button{
+    padding: 8px 40px;
+  }

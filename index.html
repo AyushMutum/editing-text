@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Editor</title>
+</head>
+<body>
+
+<div id="editor-container">
+  <h1>Editing Software</h1>
+  <textarea id="editor" placeholder="Type your text here..."></textarea>
+  <button  onclick="openModal()">Add Text</button>
+  <label for="fontSelect">Select Font:</label>
+  <select id="fontSelect" onchange="changeFont()">
+    <option value="Arial">Arial</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Courier New">Courier New</option>
+  
+  </select>
+</div>
+
+<div id="modal">
+  <div id="modal-content">
+    <label for="modalInput">Enter text:</label>
+    <input type="text" id="modalInput">
+    <button onclick="addTextFromModal()">Add</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
